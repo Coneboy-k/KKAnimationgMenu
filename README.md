@@ -1,6 +1,7 @@
 # KKAnimationgMenu
 This is a menus about animation,it can let person comfortable.
 
+[![](https://github.com/Coneboy-k/KKAnimationgMenu/blob/master/show.gif?raw=true)](https://github.com/Coneboy-k/KKAnimationgMenu/blob/master/show.gif?raw=true)
 
 ## Requirements
 KKAnimationgMenu works on any iOS version. Only ARC.
@@ -19,20 +20,31 @@ Alternatively you can directly add the `KKAnimationgMenu.h`& `KKAnimationgMenu.m
 
 ## Usage
 ```objective-c
-
 CGRect frameTmp = CGRectMake(0, 20, 320, 126*4);
-        
-        NSArray *bb = @[@"1.png",@"2.png",@"3.png",@"4.png",@"5.png",@"6.png",@"7.png",@"8.png"];
-        kkMenu= [[KKAnimationgMenu alloc]initWithImages:bb withFrame:frameTmp wideNum:2 highNum:4];
-        kkMenu.delegate = self;
-        
-        [self.view addSubview:kkMenu];
-
+NSArray *bb = @[@"1.png",@"2.png",@"3.png",@"4.png",@"5.png",@"6.png",@"7.png",@"8.png"];
+KKAnimationgMenu *kkMenu= [[KKAnimationgMenu alloc]initWithImages:bb withFrame:frameTmp wideNum:2 highNum:4];
+kkMenu.delegate = self;
+       
+[self.view addSubview:kkMenu];
 ```
+
+## Who use
+
+>图说  http://www.tushuoapp.com/
+
+
 ## License
 
 This code is distributed under the terms and conditions of the [MIT license](LICENSE). 
 
 ## Change-log
 
-A brief summary of each MBProgressHUD release can be found on the [wiki](https://github.com/matej/KKAnimationgMenu/wiki/Change-log). 
+<<<<<<< HEAD
+<<<<<<< HEAD
+A brief summary of each KKAnimationgMenu release can be found on the [wiki](https://github.com/matej/KKAnimationgMenu/wiki/Change-log). 
+=======
+A brief summary of each KKAnimationgMenu release can be found on the [wiki](https://github.com/Coneboy-k/KKAnimationgMenu/wiki). 
+>>>>>>> 3bac514fafdf14ecb3dbc94662136f2c4d41d67c
+=======
+A brief summary of each KKAnimationgMenu release can be found on the [wiki](https://github.com/Coneboy-k/KKAnimationgMenu/wiki). 
+>>>>>>> 3bac514fafdf14ecb3dbc94662136f2c4d41d67c
