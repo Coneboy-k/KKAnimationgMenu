@@ -1,6 +1,8 @@
 # KKAnimationgMenu
 This is a menus about animation,it can let person comfortable.
 
+[![图说的加载模块的载入动画总结]](http://www.coneboy.com/?p=1130)
+
 [![](https://github.com/Coneboy-k/KKAnimationgMenu/blob/master/show.gif?raw=true)](https://github.com/Coneboy-k/KKAnimationgMenu/blob/master/show.gif?raw=true)
 
 ## Requirements
