@@ -1,6 +1,7 @@
 # KKAnimationgMenu
 This is a menus about animation,it can let person comfortable.
 
+[![](https://github.com/Coneboy-k/KKAnimationgMenu/blob/master/show.gif?raw=true)](https://github.com/Coneboy-k/KKAnimationgMenu/blob/master/show.gif?raw=true)
 
 ## Requirements
 KKAnimationgMenu works on any iOS version. Only ARC.
