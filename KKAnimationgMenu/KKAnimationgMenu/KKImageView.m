@@ -31,7 +31,7 @@
 - (void)startAnimation
 {
     self.layer.transform = CATransform3DMakeScale(0.5, 0.5, 1);
-    self.alpha = 0.3;
+    self.alpha = 0;
     [UIView animateWithDuration:0.8
                           delay:([idxNum intValue]*0.05f)
          usingSpringWithDamping:0.5

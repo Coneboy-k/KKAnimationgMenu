@@ -1,6 +1,6 @@
 //
 //  KKImageView.h
-//  testBlock
+//  
 //
 //  Created by SunKe on 13-11-4.
 //  Copyright (c) 2013年 Coneboy_K. All rights reserved.

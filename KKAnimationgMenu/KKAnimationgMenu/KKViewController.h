@@ -11,6 +11,9 @@
 
 
 @interface KKViewController : UIViewController<kkAnimationgMenuDelegate>
-
+{
+    KKAnimationgMenu *kkMenu;
+}
+@property (strong, nonatomic) IBOutlet UILabel *indexLable;
 
 @end

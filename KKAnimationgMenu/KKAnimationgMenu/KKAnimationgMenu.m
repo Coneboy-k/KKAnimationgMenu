@@ -52,7 +52,7 @@
                                                                       idxNum:idxTmp];
                 NSString *imgNameTmp = [images objectAtIndex:(i*wideNumTmp+y)];
                 cellImgView.image = [UIImage imageNamed:imgNameTmp];
-                cellImgView.backgroundColor = [UIColor randomColor];
+                cellImgView.backgroundColor = [UIColor clearColor];
                 
                 [_contentView addSubview:cellImgView];
             }

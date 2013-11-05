@@ -1,9 +1,10 @@
 //
 //  KKAnimationgMenu.h
-//  KKAnimationgMenu
+//  KKAnimationgMenu version 0.1
 //
 //  Created by SunKe on 13-11-4.
-//  Copyright (c) 2013年 Coneboy_K. All rights reserved.
+//  Copyright (c) 2013年 Coneboy_K. All rights reserved.  MIT license.
+//  https://github.com/Coneboy-k/KKAnimationgMenu
 //
 
 #import <UIKit/UIKit.h>
