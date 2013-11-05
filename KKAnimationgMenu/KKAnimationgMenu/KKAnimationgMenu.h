@@ -12,42 +12,40 @@
 
 @protocol kkAnimationgMenuDelegate <NSObject>
 
+@optional
 - (void)kkMenu:(KKAnimationgMenu *)aa didTapkkMenuAtIndex:(NSUInteger)index;
 
 @end
 
 @interface KKAnimationgMenu : UIView
-{
-
-
-    CGSize cellSize;
-    
+{    
     CGFloat cellWidth;
     CGFloat cellHight;
-    
     
     NSInteger highNum;
     NSInteger wideNum;
 }
 
+
 /**
- *  初始化
+ *  init KKAnimationgMenu
  *
- *  @param images     图片数组
- *  @param wideNumTmp 每一排有多少个
+ *  @param images     images array
+ *  @param frame      KKAnimationgMenu's frame
+ *  @param wideNumTmp how many imageView in each row
+ *  @param highNumTmp how many imageView in each line
  *
- *  @return id
+ *  @return KKAnimationgMenu
  */
 - (instancetype)initWithImages:(NSArray *)images withFrame:(CGRect)frame wideNum:(NSInteger)wideNumTmp highNum:(NSInteger)highNumTmp;
 
-// 承载的所有的按钮的scrollview
-@property (nonatomic, strong, readonly) UIScrollView *contentView;
 
+@property (nonatomic, strong, readonly) UIScrollView *contentView;
 
 // 手势
 @property (nonatomic, strong) UITapGestureRecognizer *tapGesture;
 
-
+// delegate
 @property (nonatomic, weak) id <kkAnimationgMenuDelegate> delegate;
 
 

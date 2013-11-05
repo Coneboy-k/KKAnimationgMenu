@@ -16,31 +16,18 @@
 }
 
 
+/**
+ *  init KKImageView
+ *
+ *  @param frame     ImageView Frame
+ *  @param idxNumTmp sequence in show array
+ *
+ *  @return KKImageView
+ */
 
 - (id)initWithFrame:(CGRect)frame idxNum:(NSString *)idxNumTmp;
 
 
-// 手势
-@property (nonatomic, strong) UITapGestureRecognizer *tapGesture;
-
-
 
 @end
 
-
-
-///--------------------------------
-/// @name UIView+MenuActionHandlers
-///--------------------------------
-
-/**
- A category on UIView to attach a given block as an action for a single tap gesture.
- Credit: http://www.cocoanetics.com/2012/06/associated-objects/
- 
- @param block The block to execute.
- */
-@interface UIView (MenuActionHandlers)
-
-- (void)setMenuActionWithBlock:(void (^)(void))block;
-
-@end

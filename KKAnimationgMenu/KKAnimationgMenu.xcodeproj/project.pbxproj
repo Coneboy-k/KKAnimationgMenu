@@ -121,6 +121,7 @@
 		E1F0F7F51827A8C00031DD47 /* KKAnimationgMenu */ = {
 			isa = PBXGroup;
 			children = (
+				E1F70960182891E3003D1753 /* category */,
 				E1F0F8281827A92D0031DD47 /* KKAnimationgMenu */,
 				E1F0F7FE1827A8C00031DD47 /* KKAppDelegate.h */,
 				E1F0F7FF1827A8C00031DD47 /* KKAppDelegate.m */,
@@ -128,8 +129,6 @@
 				E1F0F8041827A8C00031DD47 /* KKViewController.h */,
 				E1F0F8051827A8C00031DD47 /* KKViewController.m */,
 				E1F0F8071827A8C00031DD47 /* Images.xcassets */,
-				E1F9F01C1827C98B008955E0 /* UIColor+KKColor.h */,
-				E1F9F01D1827C98B008955E0 /* UIColor+KKColor.m */,
 				E1F0F7F61827A8C00031DD47 /* Supporting Files */,
 			);
 			path = KKAnimationgMenu;
@@ -181,6 +180,15 @@
 				E1F0F82A1827A9660031DD47 /* KKAnimationgMenu.m */,
 			);
 			name = KKAnimationgMenu;
+			sourceTree = "<group>";
+		};
+		E1F70960182891E3003D1753 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				E1F9F01C1827C98B008955E0 /* UIColor+KKColor.h */,
+				E1F9F01D1827C98B008955E0 /* UIColor+KKColor.m */,
+			);
+			name = category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

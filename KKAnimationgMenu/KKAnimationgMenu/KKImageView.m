@@ -9,13 +9,10 @@
 #import "KKImageView.h"
 #import <QuartzCore/QuartzCore.h>
 
-#import <objc/runtime.h>
-
-static char kActionHandlerTapBlockKey;
-static char kActionHandlerTapGestureKey;
 
 @implementation KKImageView
 
+#pragma mark - init
 
 - (id)initWithFrame:(CGRect)frame idxNum:(NSString *)idxNumTmp;
 {
@@ -25,12 +22,11 @@ static char kActionHandlerTapGestureKey;
         idxNum = idxNumTmp;
         [self startAnimation];
         
-        // 加入点击手势判断
-        self.tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(kkIndex:)];
     }
     return self;
 }
 
+#pragma mark - Animation
 
 - (void)startAnimation
 {
@@ -49,48 +45,9 @@ static char kActionHandlerTapGestureKey;
 
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 @end
 
 
 
-
-#pragma mark - UIView+MenuActionHandlers
-
-@implementation UIView (MenuActionHandlers)
-
-- (void)setMenuActionWithBlock:(void (^)(void))block {
-	UITapGestureRecognizer *gesture = objc_getAssociatedObject(self, &kActionHandlerTapGestureKey);
-	
-	if (!gesture) {
-		gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleActionForTapGesture:)];
-		[self addGestureRecognizer:gesture];
-		objc_setAssociatedObject(self, &kActionHandlerTapGestureKey, gesture, OBJC_ASSOCIATION_RETAIN);
-	}
-    
-	objc_setAssociatedObject(self, &kActionHandlerTapBlockKey, block, OBJC_ASSOCIATION_COPY);
-}
-
-- (void)handleActionForTapGesture:(UITapGestureRecognizer *)gesture {
-	if (gesture.state == UIGestureRecognizerStateRecognized) {
-		void(^action)(void) = objc_getAssociatedObject(self, &kActionHandlerTapBlockKey);
-		
-		if (action) {
-			action();
-		}
-	}
-}
-
-
-
-
-@end
 
