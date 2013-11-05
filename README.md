@@ -39,12 +39,4 @@ This code is distributed under the terms and conditions of the [MIT license](LIC
 
 ## Change-log
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-A brief summary of each KKAnimationgMenu release can be found on the [wiki](https://github.com/matej/KKAnimationgMenu/wiki/Change-log). 
-=======
 A brief summary of each KKAnimationgMenu release can be found on the [wiki](https://github.com/Coneboy-k/KKAnimationgMenu/wiki). 
->>>>>>> 3bac514fafdf14ecb3dbc94662136f2c4d41d67c
-=======
-A brief summary of each KKAnimationgMenu release can be found on the [wiki](https://github.com/Coneboy-k/KKAnimationgMenu/wiki). 
->>>>>>> 3bac514fafdf14ecb3dbc94662136f2c4d41d67c
